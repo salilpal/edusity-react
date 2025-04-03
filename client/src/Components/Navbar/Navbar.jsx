@@ -23,7 +23,9 @@ const Navbar = () => {
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
           Testimonials
         </li>
-        <li class="">Contact us</li>
+        <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
+          Contact us
+        </li>
       </ul>
     </nav>
   );
