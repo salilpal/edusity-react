@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav class="flex justify-between text-white mx-auto items-center px-6 py-4 z-10 fixed w-full px-50">
+    <nav
+      class={`flex justify-between text-white mx-auto items-center px-6 py-4 z-10 fixed w-full px-50 ${
+        sticky ? "bg-[#212EA0] duration-500" : ""
+      }`}
+    >
       {/* bg-[#333] */}
       <img src={logo} alt="Company Logo" class="ml-4 w-50" />
       <ul class="flex justify-end gap-4 mr-4">
