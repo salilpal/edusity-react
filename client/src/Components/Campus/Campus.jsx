@@ -7,14 +7,14 @@ import gallery_4 from "../../assets/gallery-4.png";
 const Campus = () => {
   return (
     <>
-      <div class="my-20 mx-auto w-11/12">
+      <div class="my-20 mx-auto w-11/12 mb-30">
         <div class="flex items-center justify-between mb-10 gap-4">
           <img src={gallery_1} alt="" class="w-[23%] rounded-lg" />
           <img src={gallery_2} alt="" class="w-[23%] rounded-lg" />
           <img src={gallery_3} alt="" class="w-[23%] rounded-lg" />
           <img src={gallery_4} alt="" class="w-[23%] rounded-lg" />
         </div>
-        <button class="bg-[#212EA0] text-[#fff] px-6 py-3 rounded-4xl cursor-pointer mt-4 text-lg hover:bg-gray-600 hover:text-white flex mx-auto mt-20">
+        <button class="bg-[#212EA0] text-[#fff] px-6 py-3 rounded-4xl cursor-pointer mt-4 text-lg hover:bg-gray-600 hover:text-white flex mx-auto mt-10">
           See more here
         </button>
       </div>
