@@ -5,7 +5,10 @@ import play_icon from "../../assets/play-icon.png";
 const About = () => {
   return (
     <>
-      <div class="my-25 mx-auto flex items-center justify-between w-11/12 relative">
+      <div
+        class="my-25 mx-auto flex items-center justify-between w-11/12 relative"
+        id="about"
+      >
         <div class="basis-[30%]">
           <img src={about_img} alt="" class="w-full rounded-xl ml-50" />
           <img

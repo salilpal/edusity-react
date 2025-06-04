@@ -35,7 +35,10 @@ const Contact = () => {
 
   return (
     <>
-      <div class="max-w-[90%] flex items-center justify-between my-20 mx-50">
+      <div
+        class="max-w-[90%] flex items-center justify-between my-20 mx-50"
+        id="contact"
+      >
         <div class="basis-[48%] text-[#676767] flex-col">
           <h3 class="text-[#000F38] font-medium text-2xl pr-2 flex items-center gap-2 pb-2">
             Send us a message

@@ -9,7 +9,10 @@ import program_icon_3 from "../../assets/program-icon-3.png";
 const Programs = () => {
   return (
     <>
-      <div class="my-20 mx-auto w-10/12 flex items-center justify-space-between gap-10 px-35">
+      <div
+        class="my-20 mx-auto w-10/12 flex items-center justify-space-between gap-10 px-35"
+        id="programs"
+      >
         <div class="w-full rounded-xl .block relative">
           <img src={program_1} alt="" class="w-full rounded-xl block" />
           <div class="absolute inset-0 bg-[rgba(0,15,152,0.3)] rounded-xl flex flex-col items-center justify-center text-white text-center opacity-0 hover:opacity-100 hover:transition-opacity duration-300 hover:pt-7 pt-0">

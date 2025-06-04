@@ -26,7 +26,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <div class="my-20 mx-auto py-0 px-20 relative w-11/12">
+      <div class="my-20 mx-auto py-0 px-20 relative w-11/12" id="testimonials">
         <img
           src={next_icon}
           alt=""
