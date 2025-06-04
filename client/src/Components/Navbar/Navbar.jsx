@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -26,24 +27,34 @@ const Navbar = () => {
       <img src={logo} alt="Company Logo" class="ml-4 w-50" />
       <ul class="flex justify-end gap-4 mr-4">
         <li class="p-0 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          <a href="#home" class="">
+          <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
-          </a>
+          </Link>
         </li>
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          Program
+          <Link to="programs" smooth={true} offset={-250} duration={500}>
+            Program
+          </Link>
         </li>
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          About us
+          <Link to="about" smooth={true} offset={-100} duration={500}>
+            About us
+          </Link>
         </li>
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          Campus
+          <Link to="campus" smooth={true} offset={-250} duration={500}>
+            Campus
+          </Link>
         </li>
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          Testimonials
+          <Link to="testimonials" smooth={true} offset={-250} duration={500}>
+            Testimonials
+          </Link>
         </li>
         <li class="px-2 hover:underline hover:decoration-red-400 hover:decoration-3 hover:underline-offset-7 hover:text-gray-400">
-          Contact us
+          <Link to="contact" smooth={true} offset={-250} duration={500}>
+            Contact us
+          </Link>
         </li>
       </ul>
     </nav>

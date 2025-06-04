@@ -8,6 +8,7 @@ const Hero = () => {
       <div
         class="w-full min-h-screen bg-cover bg-center relative"
         style={{ backgroundImage: `url(${hero})` }}
+        id="hero"
       >
         <div class="absolute inset-0 bg-gradient-to-t from-[rgba(8,0,58,0.7)] to-transparent"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-[rgba(8,0,58,0.7)] to-transparent"></div>

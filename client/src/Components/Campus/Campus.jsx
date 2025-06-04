@@ -7,7 +7,7 @@ import gallery_4 from "../../assets/gallery-4.png";
 const Campus = () => {
   return (
     <>
-      <div class="my-20 mx-auto w-11/12 mb-30">
+      <div class="my-20 mx-auto w-11/12 mb-30" id="campus">
         <div class="flex items-center justify-between mb-10 gap-4">
           <img src={gallery_1} alt="" class="w-[23%] rounded-lg" />
           <img src={gallery_2} alt="" class="w-[23%] rounded-lg" />
